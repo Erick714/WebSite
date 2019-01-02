@@ -1,0 +1,35 @@
+.nav
+  {
+
+      list-style:none;
+      margin:0;
+      padding:0;
+      text-align:center;
+  }
+.nav li
+  {
+      display:inline;
+  }
+.nav a
+  {
+      color: Black;
+      text-decoration: none;
+
+      display:inline-block;
+      padding:10px;
+      font-size:1vw;
+  }
+.nav a:hover
+{
+
+  text-decoration: underline;
+  text-decoration-color: Black;
+}
+#Logo
+  {
+
+      list-style:none;
+      margin:0;
+      padding:0;
+      text-align:center;
+  }

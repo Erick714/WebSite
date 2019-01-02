@@ -1,0 +1,60 @@
+<link type="text/css" rel="stylesheet" href="Css/nav.css"  media="screen,projection"/>
+
+<div  id="main_navigation"style="display: block;visibility: visible;">
+  <div id="Logo">
+    <h1 style="margin:0;  font-size:4.5vw;">FIANETA</h1>
+  </div>
+
+  <ul class="nav">
+    <li><a href="/">Home</a></li>
+    <li><a href="/about/">About</a></li>
+    <li><a href="/gallery/">Gallery</a></li>
+    <li><a href="https://bikinishop.lt">E-shop</a></li>
+    <li><a href="/calculator">Size Calculator</a></li>
+    <li><a href="/contact/">Contact</a></li>
+  </ul>
+</div>
+<div  id="mobile_navigation" style="display: none;visibility: hidden;">
+<br>
+<a href="#" data-target="mobile-demo" class="sidenav-trigger" style="padding-left:10px"><img src="images\icons\hamburger.png" height="50px" alt=""></a>
+<img src="images\icons\fianeta_logo.png" align="right" style="padding-right:20px; padding-top:5px"  alt="">
+  <ul class="sidenav" id="mobile-demo">
+    <li><a href="/">Home</a></li>
+    <li><a href="/about/">About</a></li>
+    <li><a href="/gallery/">Gallery</a></li>
+    <li><a href="https://bikinishop.lt">E-shop</a></li>
+    <li><a href="/calculator">Size Calculator</a></li>
+    <li><a href="/contact/">Contact</a></li>
+  </ul>
+</div>
+<br>
+
+<script type="text/javascript">
+window.addEventListener("resize", SetNavElement);
+  function SetNavElement()
+  {
+    //none hidden
+    //block visible
+    var mainNavigation = document.getElementById('main_navigation');
+    var mobileNavigation = document.getElementById('mobile_navigation');
+        if(window.innerWidth< 600)
+          {
+            mainNavigation.style.display= "none";
+            mainNavigation.style.visibility = "hidden";
+            mobileNavigation.style.display= "block";
+            mobileNavigation.style.visibility = "visible";
+          }
+        else
+          {
+            mainNavigation.style.display= "block";
+            mainNavigation.style.visibility = "visible";
+            mobileNavigation.style.display= "none";
+            mobileNavigation.style.visibility = "hidden";
+          }
+  }
+  document.addEventListener('DOMContentLoaded', function()
+    {
+     var elems = document.querySelectorAll('.sidenav');
+     var instances = M.Sidenav.init(elems);
+   });
+</script>

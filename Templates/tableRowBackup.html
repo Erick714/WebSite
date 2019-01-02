@@ -1,0 +1,73 @@
+<tr id="NODE1_1">
+<td class="colcenter"><img src="http://www.simna.lt/wp-content/uploads/2017/08/600x600-1.jpg" alt=""> </td>
+<td><input id="Model1_1" type="text" name="Model" value="2222" style="width:40px;"> </td>
+<td>
+    <label class="switch">
+       <input id="Main1_1" type="checkbox" onchange="CheckCheckBoxes(this)">
+       <span class="slider"></span>
+    </label>
+</td>
+<td id="ColorNode_1_1" onmouseover="AddPlusik(this,2)" onmouseout="AddPlusik(this,1)">
+  <input type="button" onclick="AddColor(this.parentNode)" name="+" value="+" style="visibility:collapse; ">
+  <input type="button" onclick="RemoveColor(this.parentNode)" name="-" value="-" style="visibility:collapse;">
+  <div id="Color1_1&1" class="Colorblock" onclick="showColorPicker(this.id)"></div>
+</td>
+<td rowspan="3"class="colcenter">
+    <input id="Linejka1" type="text" name="" value="">
+</td>
+<td rowspan="3"class="colcenter">
+    <select onchange="UpdateSecondDropDownBox(this.id)"  id="Cattegory1" class="soflow">
+      <option disabled>Choose cattegory</option>
+      <option value="1">Option 1</option>
+      <option value="2">Option 2</option>
+      <option value="3">Option 3</option>
+    </select>
+</td>
+<td rowspan="3"class="colcenter">
+  <select id="Cattegory1_2" class="soflow">
+    <option ></option>
+  </select>
+ </div>
+</td>
+<td rowspan="3"class="colcenter">
+  <div id="Size1" class="CheckImages">
+    <?php include 'Templates/Sizes.html' ?>
+  </div>
+</td>
+<td rowspan="3"class="colcenter">
+  <div id="Atrributes1"class="CheckImages">
+<?php include 'Templates/Attributes.html' ?>
+  </div>
+</td>
+</tr>
+<tr id="NODE1_2">
+  <td class="colcenter"><img src="http://www.simna.lt/wp-content/uploads/2017/08/600x600-1.jpg" alt=""> </td>
+  <td><input id="Model1_1" type="text" name="Model" value="2222" style="width:40px;"></td>
+  <td>
+     <label class="switch">
+       <input id="Main1_2" type="checkbox" onchange="CheckCheckBoxes(this)">
+       <span class="slider"></span>
+    </label>
+   </td>
+   <td id="ColorNode_1_2" onmouseover="AddPlusik(this,2)" onmouseout="AddPlusik(this,1)">
+     <input type="button" onclick="AddColor(this.parentNode)" name="+" value="+" style="visibility:collapse; ">
+     <input type="button" onclick="RemoveColor(this.parentNode)" name="-" value="-" style="visibility:collapse;">
+     <div id="Color1_2&1" class="Colorblock" onclick="showColorPicker(this.id)"></div>
+   </td>
+</tr>
+<tr id="NODE1_3">
+  <td class="colcenter"><img src="http://www.simna.lt/wp-content/uploads/2017/08/600x600-1.jpg"  alt=""> </td>
+  <td><input id="Model1_1" type="text" name="Model" value="2222" style="width:40px;"></td>
+  <td>
+    <label class="switch">
+       <input id="Main1_3" type="checkbox" onchange="CheckCheckBoxes(this)">
+       <span class="slider"></span>
+    </label>
+   </td>
+   <td id="ColorNode_1_3" onmouseover="AddPlusik(this,2)" onmouseout="AddPlusik(this,1)">
+     <input type="button" onclick="AddColor(this.parentNode)" name="+" value="+" style="visibility:collapse; ">
+     <input type="button" onclick="RemoveColor(this.parentNode)" name="-" value="-" style="visibility:collapse;">
+     <div id="Color1_3&1" class="Colorblock" onclick="showColorPicker(this.id)"></div>
+   </td>
+   </td>
+</tr>
